@@ -1,10 +1,10 @@
 - The framework used: React.
 
-- Libraries used: Email JS.
+- Libraries used: Tailwind CSS / Email JS.
 
 - Animation library: Framer Motion.
 
-- Languages used: HTML5 / Tailwind CSS / JS.
+- Languages used: HTML5 / CSS3 / JS.
 
 - Live Link: https://fit-club-alpha.vercel.app/
 
