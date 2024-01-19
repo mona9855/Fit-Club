@@ -1,13 +1,53 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+ 
+.btn {
+  @apply w-32 border-solid p-2 font-bold flex justify-center items-center hover:cursor-pointer  duration-300 transition-all 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.blur {
+  @apply bg-orange-350/50 rounded-full absolute blur-150 -z-30
 }
+
+.plan>:nth-child(1) {
+  @apply fill-orange w-8 h-8
+}
+
+.plans>:nth-child(2)>svg {
+  @apply fill-white
+}
+
+.plans>:nth-child(2)>button {
+  @apply text-orange
+}
+
+.stroke-text {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  color: transparent;
+}
+
+.overflow-inherit {
+  text-overflow: inherit;
+}
+
+.program>:nth-child(1) {
+  @apply w-8 h-8 fill-white;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
