@@ -4,7 +4,7 @@ import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
 const Menu = () => {
   return (
-    <>
+    <div>
       <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
         <a href="#home">Home</a>
       </p>
@@ -20,7 +20,7 @@ const Menu = () => {
       <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
         <a href="#testimonials">Testimonials</a>
       </p>
-    </>
+    </div>
   );
 };
 
