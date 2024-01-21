@@ -15,7 +15,7 @@ const Programs = () => {
         {/* Program Categories */}
         <div className='flex gap-4 md:flex-col'>
           {programsData.map((program) => (
-            <div className='program hover:cursor-pointer hover:bg-planCard flex flex-col bg-gray p-8 gap-4 text-white justify-between' key={program.heading}>
+            <div className='program hover:cursor-pointer hover:bg-planCard active:bg-planCard flex flex-col bg-gray p-8 gap-4 text-white justify-between' key={program.heading}>
               {program.image}
               <span className='text-base font-bold'>{program.heading}</span>
               <span className='text-sm'>{program.details}</span>
