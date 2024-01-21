@@ -2,30 +2,42 @@ import React, { useState } from "react";
 import { Logo } from "./";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
 
-const Menu = () => {
-  return (
-    <div>
-      <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
-        <a href="#home">Home</a>
-      </p>
-      <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
-        <a href="#programs">Programs</a>
-      </p>
-      <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
-        <a href="#reasons">Why us</a>
-      </p>
-      <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
-        <a href="#plans">Plans</a>
-      </p>
-      <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm">
-        <a href="#testimonials">Testimonials</a>
-      </p>
-    </div>
-  );
-};
+
 
 const Header = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
+
+  const Menu = () => {
+    return (
+      <div>
+        <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
+              setToggleMenu(false);
+            }}>
+          <a href="#home">Home</a>
+        </p>
+        <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
+              setToggleMenu(false);
+            }}>
+          <a href="#programs">Programs</a>
+        </p>
+        <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
+              setToggleMenu(false);
+            }}>
+          <a href="#reasons">Why us</a>
+        </p>
+        <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
+              setToggleMenu(false);
+            }}>
+          <a href="#plans">Plans</a>
+        </p>
+        <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
+              setToggleMenu(false);
+            }}>
+          <a href="#testimonials">Testimonials</a>
+        </p>
+      </div>
+    );
+  };
 
   return (
     <div className="[&:nth-child(2)]:md:fixed [&:nth-child(2)]:md:z-50 [&:nth-child(2)]:md:right-8 flex justify-between">
