@@ -9,7 +9,7 @@ const Header = () => {
 
   const Menu = () => {
     return (
-      <div>
+      <>
         <p className="text-white font-bold text-base my-0 mx-4 cursor-pointer uppercase md:text-sm" onClick={() => {
               setToggleMenu(false);
             }}>
@@ -35,7 +35,7 @@ const Header = () => {
             }}>
           <a href="#testimonials">Testimonials</a>
         </p>
-      </div>
+      </>
     );
   };
 
