@@ -6,6 +6,8 @@
 
 - Languages used: HTML5 / CSS3 / JS.
 
+- Responsiveness: Responsive on all devices.
+
 - Live Link: https://fit-club-alpha.vercel.app/
 
 - Screenshot of it:
