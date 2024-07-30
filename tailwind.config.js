@@ -9,8 +9,12 @@ module.exports = {
         IBMPlexArabic: "'IBM Plex Sans Arabic', sans-serif",
       },
       screens: {
-        md: { max: "768px" },
-        lg: { max: "1140px" },
+        sm: "400px",
+        xsm: "580px",
+        md: "768px",
+        xmd: "920px",
+        lg: "1140px",
+        xLg: "1300px",
       },
       zIndex: {
         100: "100",

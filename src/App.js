@@ -7,7 +7,7 @@ import Filter from "./components/filter/Filter";
 function App() {
   return (
     <div>
-      <div className="px-[139px] py-[15px] flex flex-col bg-[#FAFAFA]">
+      <div className="sm:px-[20px] xmd:px-[60px] lg:px-[139px] py-[15px] flex flex-col bg-[#FAFAFA]">
         <NavBar />
         <DestinationSearch />
         <Filter />

@@ -1,17 +1,24 @@
 import React from "react";
 import logo from "../../assets/Layer 1.svg";
+import { IoMenu } from "react-icons/io5";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between p-2">
       {/* left side */}
       <div>
         <div>
           <img src={logo} alt="logo" />
         </div>
       </div>
+
+      {/* Menu */}
+      <div className="xmd:hidden flex">
+        <IoMenu className="text-2xl inline-block text-black" />
+      </div>
+
       {/* Right side */}
-      <div className="flex gap-4 items-center">
+      <div className="hidden xmd:flex gap-4 items-center">
         {/* Add your property */}
         <div className="flex gap-2 bg-[#78BAC6] border-[1px] rounded-[32px] border-[#78BAC6] py-2 px-4">
           <img src="./home.svg" alt="user" />

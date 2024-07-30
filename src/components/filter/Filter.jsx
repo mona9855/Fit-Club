@@ -10,17 +10,17 @@ import MakeMyApartment from "../make-my-apartment/MakeMyApartment";
 
 const Filter = () => {
   return (
-    <div className="pt-10 flex flex-col gap-5">
+    <div className="pt-10 flex flex-col gap-5 p-2">
       {/* header */}
       <div className="flex gap-4 items-center justify-between">
         <div className="flex gap-2 items-center">
           <img src={arrow} alt="arrow" />
-          <p className="text-[24.75px] font-bold font-IBMPlexArabic ">
+          <p className="text-[18px] xsm:text-[24.75px] font-bold font-IBMPlexArabic ">
             عنوان التصنيف أو الفلتر
           </p>
         </div>
         <div className="flex gap-2 items-center">
-          <p className="text-[#EF3F24] text-[15.75px] font-IBMPlexArabic font-bold">
+          <p className="text-[#EF3F24] text-[13px] xsm:text-[15.75px] font-IBMPlexArabic font-bold">
             تصفية
           </p>
           <img src={filter} alt="filter" />
@@ -28,8 +28,8 @@ const Filter = () => {
       </div>
 
       {/* aparatments collections */}
-      <div className="flex items-center">
-        <div className="flex gap-4">
+      <div className="flex items-center justify-center">
+        <div className="flex xsm:flex-row flex-col items-center justify-center gap-4">
           <MakeMyApartment img="./luxury-place-resort.png" />
           <MakeMyApartment img="./swimming-pool.png" />
           <MakeMyApartment img=".//169741.png" />
