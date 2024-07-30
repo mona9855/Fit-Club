@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -55,3 +56,29 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("../public/Icon\ ionic-md-arrow-dropdown.svg");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 10px;
+   
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    display: block;
+    background: url("../public/calendar.svg") no-repeat;
+    width: 15px;
+    height: 15px;
+    border-width: thin;
+    padding: 0;
+    margin: 0;
+}
+
