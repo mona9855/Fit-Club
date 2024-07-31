@@ -3,11 +3,6 @@ import arrow from "../../assets/Icon feather-arrow-left.svg";
 import filter from "../../assets/Glyph.svg";
 import MakeMyApartment from "../make-my-apartment/MakeMyApartment";
 
-// import apar1 from "../../assets/luxury-place-resort.png";
-// import apar2 from "../../assets/swimming-pool.png";
-// import apar3 from "../../assets/169741.png";
-// import apar4 from "../../assets/2150683421.png";
-
 const Filter = () => {
   return (
     <div className="pt-10 flex flex-col gap-5 p-2">

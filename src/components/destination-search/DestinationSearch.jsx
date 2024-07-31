@@ -2,7 +2,30 @@ import React, { useState } from "react";
 import search from "../../assets/search.svg";
 
 const DestinationSearch = () => {
+  const event = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+  const [enterDate, setEnterDate] = useState(event);
+  const [exitDate, setExitDate] = useState(event);
+
+  const options = {
+    // weekday: "long",
+    // year: "numeric",
+    month: "long",
+    day: "numeric",
+  };
+
+  const enterArDate = new Date(enterDate).toLocaleDateString("ar-EG", options);
+  const exitArDate = new Date(exitDate).toLocaleDateString("ar-EG", options);
+
   const [destination, setDestination] = useState("هايسيندا باي");
+
+  const handleEnterDateChange = (e) => {
+    setEnterDate(e.target.value);
+  };
+
+  const handleExitDateChange = (e) => {
+    setExitDate(e.target.value);
+  };
+
   return (
     <div className="pt-[80px]">
       <div>
@@ -39,17 +62,27 @@ const DestinationSearch = () => {
                 تاريخ الدخول
               </p>
               <div className="flex gap-1 items-center">
+                <p className="text-[15  px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic  ">
+                  {enterArDate}
+                </p>
                 <input
-                  type="text"
-                  className="text-[18px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic w-[80px] xsm:w-[100px]"
-                  defaultValue="22 ديسمبر"
-                  placeholder="22 ديسمبر"
+                  customStyles={{
+                    dateInput: {
+                      borderStyle: null,
+                      height: 0,
+                      width: 0,
+                    },
+                  }}
+                  onChange={handleEnterDateChange}
+                  type="date"
+                  className="active:!border-none text-[18px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic w-[30px] "
+                  defaultValue=""
                 />
-                <img
+                {/* <img
                   src="./calendar.svg"
                   alt="date picker"
                   className="w-[12px] h-[12px]"
-                />
+                /> */}
               </div>
               <div className="flex gap-1">
                 <p className="underline text-[12px] text-black font-IBMPlexArabic font-bold">
@@ -66,17 +99,27 @@ const DestinationSearch = () => {
                 تاريخ الخروج
               </p>
               <div className="flex gap-1 items-center">
+                <p className="text-[15px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic  ">
+                  {exitArDate}
+                </p>
                 <input
-                  type="text"
-                  className="text-[18px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic w-[80px] xsm:w-[100px]"
-                  defaultValue="22 ديسمبر"
-                  placeholder="22 ديسمبر"
+                  customStyles={{
+                    dateInput: {
+                      borderStyle: null,
+                      height: 0,
+                      width: 0,
+                    },
+                  }}
+                  type="date"
+                  className="active:!border-none text-[18px] xsm:text-[21.75px] text-black font-bold font-IBMPlexArabic w-[30px] "
+                  defaultValue=""
+                  onChange={handleExitDateChange}
                 />
-                <img
+                {/* <img
                   src="./calendar.svg"
                   alt="date picker"
                   className="w-[12px] h-[12px]"
-                />
+                /> */}
               </div>
               <div className="flex gap-1">
                 <p className="underline text-[12px] text-black font-IBMPlexArabic font-bold">
