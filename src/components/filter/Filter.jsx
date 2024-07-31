@@ -28,8 +28,8 @@ const Filter = () => {
       </div>
 
       {/* aparatments collections */}
-      <div className="flex items-center justify-center">
-        <div className="flex xsm:flex-row flex-col items-center justify-center gap-4">
+      <div className=" ">
+        <div className="flex xsm:flex-row flex-col items-center justify-between gap-4">
           <MakeMyApartment img="./luxury-place-resort.png" />
           <MakeMyApartment img="./swimming-pool.png" />
           <MakeMyApartment img=".//169741.png" />
