@@ -39,9 +39,9 @@ const DestinationSearch = () => {
           </p>
         </div>
 
-        <div className=" items-center justify-center flex xlg:flex-row flex-col  gap-6 bg-white rounded-[15px] shadow-lg pt-8 pb-12 px-2 xsm:px-12 relative">
+        <div className=" items-center justify-center flex xxlg:flex-row flex-col  gap-6 bg-white rounded-[15px] shadow-lg pt-8 pb-12 px-2 xsm:px-12 relative">
           {/* First box */}
-          <div className=" flex flex-col gap-3 py-4 px-6 border-[2px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xlg:w-[32%]">
+          <div className=" flex flex-col gap-3 py-4 px-6 border-[3px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xxlg:w-[32%]">
             <p className="text-[12px] text-black  font-IBMPlexArabic font-medium">
               ابحث عن وجهة
             </p>
@@ -56,7 +56,7 @@ const DestinationSearch = () => {
           </div>
 
           {/* Second box */}
-          <div className="flex  gap-5 py-4 px-6 border-[3px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xlg:w-[32%]">
+          <div className="flex  gap-5 py-4 px-6 border-[3px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xxlg:w-[32%]">
             <div className="flex flex-col gap-2 flex-1">
               <p className="text-[12px] text-black font-IBMPlexArabic font-medium">
                 تاريخ الدخول
@@ -132,7 +132,7 @@ const DestinationSearch = () => {
             </div>
           </div>
           {/* Third box */}
-          <div className="flex flex-col gap-3 py-4 px-6 border-[3px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xlg:w-[32%]">
+          <div className="flex flex-col gap-3 py-4 px-6 border-[3px] rounded-[15px] border-[#F0F0F0] xsm:w-[70%] w-[90%] xxlg:w-[32%]">
             <p className="font-IBMPlexArabic font-medium text-[12px]">الضيوف</p>
             <p className="font-IBMPlexArabic font-bold text-[18px] xsm:text-[21.75px]">
               2 كبار , 2 أطفال

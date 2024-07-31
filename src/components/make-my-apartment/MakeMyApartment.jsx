@@ -2,7 +2,7 @@ import React from "react";
 
 const MakeMyApartment = ({ img }) => {
   return (
-    <div>
+    <div className="w-3/4 xsm:w-[1/4]">
       <div>
         {/* Image */}
         <div className="relative">
