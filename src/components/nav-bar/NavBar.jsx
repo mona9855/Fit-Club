@@ -4,7 +4,7 @@ import { IoMenu } from "react-icons/io5";
 
 const NavBar = () => {
   return (
-    <div className="flex items-center justify-between p-2">
+    <div className="flex items-center justify-between p-2 ">
       {/* left side */}
       <div>
         <div>

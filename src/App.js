@@ -7,10 +7,16 @@ import Filter from "./components/filter/Filter";
 function App() {
   return (
     <div>
-      <div className="sm:px-[20px] xmd:px-[60px] lg:px-[139px] py-[15px] flex flex-col bg-[#FAFAFA]">
-        <NavBar />
-        <DestinationSearch />
-        <Filter />
+      <div className="   flex flex-col bg-[#FAFAFA]">
+        <div className="bg-white basis-full w-[100%] xmd:px-[60px] sm:px-[20px] lg:px-[139px] py-[15px]">
+          <NavBar />
+        </div>
+        <div className="xmd:px-[60px] lg:px-[139px] sm:px-[20px]">
+          <DestinationSearch />
+        </div>
+        <div className="xmd:px-[60px] lg:px-[139px] sm:px-[20px]">
+          <Filter />
+        </div>
       </div>
     </div>
   );
