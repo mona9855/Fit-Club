@@ -1,14 +1,14 @@
 import React from "react";
 
-const MakeMyApartment = ({ img }) => {
+const MakeMyApartment = ({ item }) => {
   return (
-    <div className="w-3/4 xsm:w-[1/4]">
+    <div>
       <div>
         {/* Image */}
-        <div className="relative">
+        <div className="relative w-[177px] h-[160px]">
           <img
             className="w-[100%] h-[100%]  rounded-[20px]"
-            src={img}
+            src={item?.mainImage}
             alt="apartment"
           />
           <div className="absolute top-4 left-4 bg-white rounded-full p-2">
@@ -16,18 +16,20 @@ const MakeMyApartment = ({ img }) => {
           </div>
         </div>
         {/* description */}
-        <div>
-          <div className="flex items-center justify-between mt-5">
+        <div className="w-[177px]">
+          <div className="flex items-center justify-between mt-5 px-1 ">
             <p className="text-[18px] text-black font-IBMPlexArabic font-bold">
-              شاليهات هايسيندا
+              {item?.nameAr}
             </p>
-            <p className="text-white bg-[#EF3F24] rounded-[6px] p-[5px]">8.7</p>
+            <p className="text-white bg-[#EF3F24] rounded-[6px] px-[8px] py-[4px]">
+              {item?.hotelStars ? item?.hotelStars : 0}
+            </p>
           </div>
           <p className="text-[#7E7E7E] text-[12px] font-medium font-IBMPlexArabic ">
-            مرسى مطروح، مصر
+            {item?.website}
           </p>
           <p className="text-[14px] text-black font-IBMPlexArabic font-bold">
-            500.00 ريال
+            {item?.price} ريال
             <span className="text-[12px] text-[#7E7E7E] font-IBMPlexArabic font-bold">
               {" "}
               في الليلة{" "}

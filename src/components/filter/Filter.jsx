@@ -1,9 +1,32 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import arrow from "../../assets/Icon feather-arrow-left.svg";
 import filter from "../../assets/Glyph.svg";
 import MakeMyApartment from "../make-my-apartment/MakeMyApartment";
 
 const Filter = () => {
+  const [allData, setAllData] = useState([]);
+
+  const getData = async () => {
+    try {
+      await fetch("https://wovenclouds.com/arrovia/api/search/random", {
+        headers: {
+          "Content-Type": "application/json",
+        },
+        withCredentials: true,
+      })
+        .then((response) => response.json())
+        .then((data) => setAllData(data?.data));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
+  console.log(allData);
+
   return (
     <div className="pt-10 flex flex-col gap-5 p-2">
       {/* header */}
@@ -24,11 +47,18 @@ const Filter = () => {
 
       {/* aparatments collections */}
       <div className=" ">
-        <div className="flex xsm:flex-row flex-col items-center justify-between gap-3 ">
-          <MakeMyApartment img="./luxury-place-resort.png" />
-          <MakeMyApartment img="./swimming-pool.png" />
-          <MakeMyApartment img=".//169741.png" />
-          <MakeMyApartment img="./2150683421.png" />
+        <div className="flex xsm:flex-row flex-col items-center flex-wrap justify-center gap-3 ">
+          {allData?.length > 0 ? (
+            <>
+              {allData?.map((item, index) => {
+                return <MakeMyApartment key={index} item={item} />;
+              })}
+            </>
+          ) : (
+            <p className="text-green-500 font-medium text-[14px] font-IBMPlexArabic m-10">
+              برجاء الانتظار ... جاري تحميل العقارات ⏳
+            </p>
+          )}
         </div>
       </div>
     </div>

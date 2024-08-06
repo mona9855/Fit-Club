@@ -8,6 +8,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "auto": "^11.0.4",
+    "axios": "^1.7.3",
     "framer-motion": "^10.18.0",
     "number-counter": "^1.0.3",
     "postcss": "^8.4.33",
